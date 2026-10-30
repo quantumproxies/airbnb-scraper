@@ -1,0 +1,101 @@
+{
+ "run_id": "cmvksgk9d0u2j41o54rhpngck",
+ "slug": "airbnb_stays",
+ "version": "1.1.1",
+ "status": "done",
+ "input": {
+  "location": "Lisbon, Portugal",
+  "checkin": "2026-12-01",
+  "checkout": "2026-12-03",
+  "adults": 2,
+  "max_results": 3
+ },
+ "count": 3,
+ "partial": false,
+ "finished_at": "2026-10-23T09:49:51.536Z",
+ "results": [
+  {
+   "url": "https://www.airbnb.com/rooms/1195206575229724261",
+   "beds": 2,
+   "name": "Alfama Village with Air-conditioned door 11",
+   "rank": 3,
+   "image": "https://a0.muscache.com/im/pictures/miso/Hosting-1195206575229724261/original/50005e8b-d20e-4bd9-b6dc-4bad6361e684.jpeg",
+   "title": "Apartment in Lisbon",
+   "badges": [
+    "Guest favorite"
+   ],
+   "nights": 2,
+   "photos": [
+    "https://a0.muscache.com/im/pictures/miso/Hosting-1195206575229724261/original/50005e8b-d20e-4bd9-b6dc-4bad6361e684.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1195206575229724261/original/60efb7f6-c178-4fb6-8118-4d3a75042370.jpeg"
+   ],
+   "rating": 4.84,
+   "reviews": 178,
+   "bed_info": "2 bedrooms, 2 single beds, 1 bath",
+   "bedrooms": 2,
+   "check_in": "2026-12-01",
+   "currency": "USD",
+   "is_hotel": false,
+   "subtitle": "Alfama duplex with Tram 28 outside",
+   "bathrooms": 1,
+   "check_out": "2026-12-03",
+   "pay_later": false,
+   "superhost": false,
+   "listing_id": "1195206575229724261",
+   "price_text": "$152",
+   "photo_count": 6,
+   "price_total": 152,
+   "property_id": null,
+   "property_type": "Apartment",
+   "guest_favorite": true,
+   "price_per_night": 75.74,
+   "price_qualifier": "for 2 nights",
+   "rooms_available": null,
+   "free_cancellation": false,
+   "price_original_total": null
+  },
+  {
+   "url": "https://www.airbnb.com/rooms/1663639623527062900",
+   "beds": null,
+   "name": "Wilde Lisbon",
+   "rank": 1,
+   "image": "https://a0.muscache.com/im/pictures/BnbProperty/BnbProperty-1675566802729640483/original/2b23cea3-bc00-4993-b893-d35c1437d3bc.jpeg",
+   "title": "Wilde Lisbon",
+   "badges": [
+    "Featured hotel"
+   ],
+   "nights": 2,
+   "photos": [
+    "https://a0.muscache.com/im/pictures/BnbProperty/BnbProperty-1675566802729640483/original/2b23cea3-bc00-4993-b893-d35c1437d3bc.jpeg",
+    "https://a0.muscache.com/im/pictures/BnbProperty/BnbProperty-1675566802729640483/original/70f7c485-c480-4f6c-a2f5-0897eae8a1a7.jpeg"
+   ],
+   "rating": 4.9,
+   "reviews": 41,
+   "bed_info": null,
+   "bedrooms": null,
+   "check_in": "2026-12-01",
+   "currency": "USD",
+   "is_hotel": true,
+   "latitude": 38.7245,
+   "subtitle": "Hotel in Avenidas Novas",
+   "bathrooms": null,
+   "check_out": "2026-12-03",
+   "longitude": -9.1528,
+   "pay_later": false,
+   "superhost": false,
+   "listing_id": "1663639623527062900",
+   "price_text": "$223",
+   "photo_count": 6,
+   "price_total": 223,
+   "property_id": "1675566802729640483",
+   "property_type": null,
+   "guest_favorite": false,
+   "price_per_night": 102.42,
+   "price_qualifier": "for 2 nights",
+   "rooms_available": null,
+   "free_cancellation": true,
+   "price_original_total": null
+  }
+ ],
+ "_note": "Real run of 2026-10-23 for a two-night stay (1-3 December 2026); two of the three rows are kept. The apartment row leaves out latitude and longitude because it is a private home (real rows carry Airbnb's approximate map point); the hotel row keeps them. Photos cut to two per row."
+}

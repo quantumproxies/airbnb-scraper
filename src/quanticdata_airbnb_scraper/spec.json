@@ -1,0 +1,84 @@
+{
+ "cli": "airbnb-scraper",
+ "name": "Airbnb Scraper",
+ "version": "0.1.0",
+ "description": "Airbnb scraper for Python and the command line: stays for a city, region or neighbourhood with nightly price, stay total, rating, reviews, bedrooms, beds and map point, for the dates you choose, as JSON or CSV. Free and open source; sign in with your QuanticData account, no proxies or headless browser to run.",
+ "links": {
+  "repo": "https://github.com/quantumproxies/airbnb-scraper",
+  "page": "https://quanticdata.io/collectors/airbnb-scraper-api/?utm_source=github&utm_medium=cli&utm_campaign=airbnb-scraper",
+  "billing": "https://app.quanticdata.io/billing?utm_source=github&utm_medium=cli&utm_campaign=airbnb-scraper",
+  "pricing": "https://quanticdata.io/pricing/?utm_source=github&utm_medium=cli&utm_campaign=airbnb-scraper"
+ },
+ "commands": [
+  {
+   "name": "search",
+   "collector": "airbnb_stays",
+   "method": "search",
+   "help": "Airbnb stays for a city, region or neighbourhood",
+   "description": "Airbnb stay search for a place — title, type, nightly price, rating, reviews, beds and coordinates.",
+   "positional": "location",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "listing_id",
+    "name",
+    "price_per_night",
+    "price_total",
+    "rating",
+    "reviews",
+    "bedrooms"
+   ],
+   "sample": "airbnb_stays",
+   "inputs": [
+    {
+     "name": "location",
+     "type": "string",
+     "required": true,
+     "description": "City, region or neighbourhood, e.g. \"Rome\", \"Rome, Italy\" or \"Brooklyn, New York\". Resolved by Airbnb's own search, exactly as typing it into the site would.",
+     "arg": "location"
+    },
+    {
+     "name": "checkin",
+     "type": "string",
+     "required": false,
+     "description": "Arrival date as YYYY-MM-DD. Must be given together with checkout; omit both to let Airbnb price each listing for its own suggested stay.",
+     "arg": "checkin"
+    },
+    {
+     "name": "checkout",
+     "type": "string",
+     "required": false,
+     "description": "Departure date as YYYY-MM-DD. Must be after checkin.",
+     "arg": "checkout"
+    },
+    {
+     "name": "adults",
+     "type": "integer",
+     "required": false,
+     "description": "Number of adult guests (1–16). Omit for Airbnb's default of one.",
+     "min": 1,
+     "max": 16,
+     "arg": "adults"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the search from, as an ISO 3166-1 alpha-2 code (us, gb, de...). Airbnb prices in that country's currency.",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many stays to deliver at most (1–90). You pay only for delivered stays.",
+     "min": 1,
+     "max": 90,
+     "default": 18,
+     "arg": "max_results"
+    }
+   ]
+  }
+ ]
+}

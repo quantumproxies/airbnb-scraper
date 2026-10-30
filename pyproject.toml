@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quanticdata-airbnb-scraper"
+version = "0.1.0"
+description = "Airbnb scraper for Python and the command line: stays for a city, region or neighbourhood with nightly price, stay total, rating, reviews, bedrooms, beds and map point, for the dates you choose, as JSON or CSV. Free and open source; sign in with your QuanticData account, no proxies or headless browser to run."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "QuanticData", email = "hello@quanticdata.io" }]
+keywords = ["airbnb-scraper", "airbnb", "airbnb-api", "airbnb-data", "airbnb-listings", "airbnb-prices", "short-term-rentals", "vacation-rentals", "travel-data", "web-scraping", "scraper", "python"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.3"]
+
+[project.scripts]
+airbnb-scraper = "quanticdata_airbnb_scraper.__main__:run"
+
+[project.urls]
+Homepage = "https://quanticdata.io/collectors/airbnb-scraper-api/?utm_source=github&utm_medium=pypi&utm_campaign=airbnb-scraper"
+Documentation = "https://quanticdata.io/docs/"
+Source = "https://github.com/quantumproxies/airbnb-scraper"
+Issues = "https://github.com/quantumproxies/airbnb-scraper/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"quanticdata_airbnb_scraper" = ["spec.json", "py.typed"]
